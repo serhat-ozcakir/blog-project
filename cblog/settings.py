@@ -164,4 +164,4 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 django_heroku.settings(locals()) 
 
-DISABLE_COLLECTSTATIC=1
+DEBUG_COLLECTSTATIC=1
