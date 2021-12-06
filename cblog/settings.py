@@ -132,7 +132,7 @@ MEDIA_URL = '/media/'
 
 MEDIA_ROOT = BASE_DIR / "media_root"
 
-STATIC_URL = '/static/'
+# STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR / 'static')
 STATIC_DIRS = (
     os.path.join(BASE_DIR, 'static'),
@@ -163,3 +163,5 @@ EMAIL_HOST_PASSWORD = config("EMAIL_PASSWORD")
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 django_heroku.settings(locals()) 
+
+DISABLE_COLLECTSTATIC=1
